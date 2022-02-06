@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentAction">
+
+    <Button
+        android:id="@+id/bdate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_background"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/date"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/bmonth"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_background"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/monthly"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
+
+    <Spinner
+        android:id="@+id/squater"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_background"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:prompt="@string/spinner_title"
+        android:textAlignment="center"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/table_layout_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/reportheading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_button_gery"
+                android:padding="10dp"
+                android:text="REPORT SUMMERY"
+                android:textAlignment="center" />
+
+            <TableRow
+                android:background="#0079D6"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="UserId" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="User Name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Location" />
+            </TableRow>
+
+        </TableLayout>
+        <ListView
+            android:layout_marginTop="140dp"
+            android:divider="@drawable/divider"
+            android:id="@+id/customer_detail"
+            android:layout_width="match_parent"
+            android:layout_height="261dp">
+
+        </ListView>
+
+
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/movie_icon"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:contentDescription="@string/movie_genre"-->
+        <!--            android:src="@drawable/movie_icon"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:gravity="center"-->
+        <!--            android:padding="@dimen/layout_padding_default"-->
+        <!--            android:text="@string/action_movies"-->
+        <!--            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"-->
+        <!--            android:textColor="@color/white"/>-->
+
+    </FrameLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/movie_title"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:padding="@dimen/layout_padding_default"-->
+    <!--        android:text="@string/movie_title"-->
+    <!--        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>-->
+
+</LinearLayout>

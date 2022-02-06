@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/inputsearch"
+            android:layout_width="219dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.91"
+            android:background="@color/red"
+            android:hint="@string/EnterUserName"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/Search"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/Search" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="From" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/inputTotal1"
+
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/red"
+            android:hint="@string/EnterDate"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/inputTotal2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/red"
+            android:hint="@string/EnterTime"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="TO" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/inputTotal3"
+
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/red"
+            android:hint="@string/EnterDate"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/inputTotal4"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/red"
+            android:hint="@string/EnterTime"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:padding="5dp"
+            android:text="TotalAmount"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="TotalAmount"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:padding="5dp"
+            android:text="Total Car In"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tCarin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="total car"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:padding="5dp"
+            android:text="Total Car Out"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tCarout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="total car"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <LinearLayout
+            android:id="@+id/layoutDisplayPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/CustomerDetails"
+                android:textColor="@color/text_color"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvNoRecordsFound"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/NoRecordsFound"-->
+                <!--android:textColor="@color/text_color"-->
+                <!--android:textSize="15dp" />-->
+
+            <ListView
+                android:divider="@drawable/divider"
+                android:id="@+id/customerdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+    <!--<LinearLayout--><!--android:id="@+id/parentLayout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>--><!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content">-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+

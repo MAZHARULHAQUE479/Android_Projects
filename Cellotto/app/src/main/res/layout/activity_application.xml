@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clipToPadding="false"
+    android:padding="5sp"
+    tools:context="company.cell.com.Cellotto.ApplicationActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="-5sp"
+        android:layout_marginRight="-5sp"
+        android:layout_height="56sp"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+   android:layout_marginTop="56sp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content" >
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Application"
+            android:gravity="center"
+            android:textColor="#b2d5f2"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#cdb5cd"/>
+       <company.cell.com.Cellotto.Custom.MyEditTextLight
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="First Name"
+           android:textColorHint="#ffffff"
+           android:textColor="#ffffff"
+           android:layout_marginTop="20sp"
+           android:id="@+id/fname"
+           android:textAppearance="@style/TextAppearance.FontPath"
+           android:inputType="textPersonName"
+           android:maxLength="30"/>
+
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:id="@+id/lname"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:inputType="textPersonName"
+            android:maxLength="30"/>
+
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:id="@+id/dob"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:inputType="date"
+            android:maxLength="10"/>
+
+       <!-- <company.cell.com.cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sex"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:id="@+id/sex"
+            android:inputType="text"
+            android:maxLength="6"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:id="@+id/male"
+                android:buttonTint="@color/radio_color"
+                android:textSize="16sp"
+                android:textColor="#ffffff"/>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:id="@+id/female"
+                android:layout_marginLeft="20sp"
+                android:buttonTint="@color/radio_color"
+                android:textSize="16sp"
+                android:textColor="#ffffff"/>
+        </RadioGroup>
+        </LinearLayout>
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City/Town"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/city"
+            android:inputType="textPostalAddress"
+            android:maxLength="20"
+            />
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/phone"
+            android:inputType="number"
+            android:maxLength="10"
+            />
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:maxLength="100"/>
+
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Secret Code"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:id="@+id/secret_code"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:maxLength="20"
+            android:inputType="text"/>
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Retype Secret Code"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/reSecret_code"
+            android:maxLength="20"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose your question"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/spinner_hint"
+            android:maxLength="20"
+            android:inputType="text"/>
+        <Spinner
+            android:id="@+id/spinnerquestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Question"
+            android:prompt="@string/question_prompt"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:overlapAnchor="false"
+            android:layout_marginTop="10sp"
+            android:spinnerMode="dropdown"
+
+         />
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10sp"
+            android:id="@+id/answer"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:inputType="text"
+            android:maxLength="50"/>
+
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/submit"
+            android:textColor="#ffffff"
+            android:background="@drawable/playbutton"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+    <ImageView
+        android:id="@+id/toolbaricon"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/cellotto_small" />
+</RelativeLayout>

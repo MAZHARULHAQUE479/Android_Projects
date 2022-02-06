@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+    android:background="@color/background"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/plugout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/plugout"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/readerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="SN:AABBCCDD"
+            android:textColor="#F00"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/uidTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sn"
+            android:layout_marginTop="10dp"
+            android:text="UID:"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/uidTitle"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/uidTitle"
+            android:layout_toRightOf="@id/uidTitle"
+            android:text="FFFFFFFF"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/keyATitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uidTitle"
+            android:layout_marginTop="20dp"
+            android:text="Key A:"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/keyA"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/keyATitle"
+            android:layout_alignLeft="@id/uid"
+            android:layout_alignStart="@id/uid"
+            android:layout_toEndOf="@id/keyATitle"
+            android:layout_toRightOf="@id/keyATitle"
+            android:maxLength="12"
+            android:text="FFFFFFFFFFFF"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/blockNoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keyATitle"
+            android:layout_marginTop="20dp"
+            android:text="Block No:"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/blockNo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/blockNoTitle"
+            android:layout_alignLeft="@id/uid"
+            android:layout_alignStart="@id/uid"
+            android:layout_toEndOf="@id/blockNoTitle"
+            android:layout_toRightOf="@id/blockNoTitle"
+            android:maxLength="2"
+            android:text="4"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/blockDataTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blockNoTitle"
+            android:layout_marginTop="20dp"
+            android:text="Block Data:"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/blockData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blockDataTitle"
+            android:layout_marginTop="10dp"
+            android:gravity="start|top"
+            android:lines="3"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/readButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blockData"
+            android:layout_marginTop="5dp"
+            android:background="#0000"
+            android:onClick="onRead"
+            android:padding="5dp"
+            android:text="Read"
+            android:textColor="@color/button"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/writeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blockData"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/readButton"
+            android:layout_toRightOf="@id/readButton"
+            android:background="#0000"
+            android:onClick="onWrite"
+            android:padding="5dp"
+            android:text="Write"
+            android:textColor="@color/button"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/uidButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/blockData"
+            android:layout_marginTop="5dp"
+            android:background="#0000"
+            android:onClick="onUid"
+            android:padding="5dp"
+            android:text="UID"
+            android:textColor="@color/button"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

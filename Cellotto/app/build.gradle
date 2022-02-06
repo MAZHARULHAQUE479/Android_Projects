@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "company.cell.com.Cellotto"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+repositories {
+    maven {
+        url 'http://dl.bintray.com/techquest/maven-repo'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'me.anwarshahriar:calligrapher:1.0'
+    //    compile project(':deviceprint-release-2.2.0')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.google.android:flexbox:0.2.5'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.interswitchng:payment-android:0.0.8'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/unity-classes/unity-classes.jar')
+}
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

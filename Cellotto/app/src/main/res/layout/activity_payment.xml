@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="company.cell.com.Cellotto.PaymentActivity"
+    android:background="@drawable/background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:background="?attr/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+   android:layout_marginTop="56sp"
+    android:background="@drawable/background"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+
+    <RelativeLayout
+        android:padding="10sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/layout1"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Payment Option"
+    android:textColor="#b2d5f2"
+    android:gravity="center"
+    android:textSize="25sp"
+    android:textAppearance="@style/TextAppearance.FontPath"
+    android:textStyle="italic"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#cdb5cd"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:id="@+id/pay">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verve"
+                android:id="@+id/verve"
+                android:paddingLeft="20sp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:buttonTint="@color/radio_color"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MasterCard"
+                android:paddingLeft="20sp"
+                android:id="@+id/mastercard"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:layout_marginTop="10sp"
+                android:buttonTint="@color/radio_color"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visa"
+                android:id="@+id/visa"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:paddingLeft="20sp"
+                android:textAppearance="@style/TextAppearance.FontPath"
+                android:layout_marginTop="10sp"
+                android:buttonTint="@color/radio_color"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Details"
+            android:textColor="#b2d5f2"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:layout_marginTop="20sp"
+            android:textStyle="italic"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#cdb5cd"/>
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Card Number"
+            android:maxLength="18"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/card_number"
+            android:inputType="number"
+            />
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Card Holder Name"
+            android:maxLength="30"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/card_holder_name"
+            android:inputType="textPersonName"
+            />
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Expiry Date"
+            android:textSize="16sp"
+            android:id="@+id/expiryDate"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:inputType="date"
+            android:maxLength="10"
+            />
+        <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="CVV"
+            android:maxLength="3"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/cvvCode"
+            android:inputType="number"
+            />
+       <company.cell.com.Cellotto.Custom.MyEditTextLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Security Code"
+            android:id="@+id/security_code"
+            android:textSize="16sp"
+           android:textAppearance="@style/TextAppearance.FontPath"
+            android:inputType="number"
+            android:maxLength="50"
+            />
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:text="Proceed"
+            android:id="@+id/proceed"
+            android:background="@drawable/playbutton"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+    <ImageView
+        android:id="@+id/toolbaricon"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/cellotto_small" />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="382dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.18"
+    android:weightSum="1">
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want to delete"
+        android:id="@+id/textView15"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/SelectBefore"
+        android:id="@+id/textView16"
+        android:layout_marginTop="45dp" />
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+    android:orientation="horizontal"
+    android:layout_width="403dp"
+    android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="15dp"
+            android:textColorHint="@android:color/white"
+            android:background="@color/red"
+            android:hint="@string/Date"
+        android:layout_marginTop="45dp"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:id="@+id/date"
+            android:layout_weight="0.17" />
+
+        <EditText
+            android:id="@+id/time"
+
+            android:layout_width="116dp"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:background="@color/red"
+            android:hint="@string/Time"
+            android:textColorHint="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="392dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/textView16"
+            android:layout_alignStart="@+id/textView16"
+            android:layout_below="@+id/textView16"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/OK" />
+
+        <Button
+            android:id="@+id/button8"
+
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/date"
+            android:layout_alignStart="@+id/date"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

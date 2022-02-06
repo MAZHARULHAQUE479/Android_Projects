@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1059469855913",
+    "firebase_url": "https://cellotto-17c7f.firebaseio.com",
+    "project_id": "cellotto-17c7f",
+    "storage_bucket": "cellotto-17c7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059469855913:android:6426f2937da787a9",
+        "android_client_info": {
+          "package_name": "company.cell.com.Cellotto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059469855913-kvq13r6msnpuumt3uj00hiqm53jha7se.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "company.cell.com.Cellotto",
+            "certificate_hash": "4054b32507f71f865013b10f74b36abbdf32a385"
+          }
+        },
+        {
+          "client_id": "1059469855913-ea699nc3bfpcms09uv5m058kaq97mait.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0Y6IAfCUSFvh6w2ReGbVgMIYEd0qM6XM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059469855913-ea699nc3bfpcms09uv5m058kaq97mait.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical|center"
+                android:hint="Enter Your Name"
+                android:inputType="textPersonName"
+                android:textSize="18sp"
+                android:textStyle="bold|bold" />
+
+            <EditText
+                android:id="@+id/etadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="Address"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/dtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etadd"
+                android:padding="@dimen/layout_padding_default"
+                android:text="Select Department" />
+
+            <Spinner
+                android:id="@+id/squater"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/dtext"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp" />
+
+
+            <TextView
+                android:id="@+id/gtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/squater"
+                android:padding="@dimen/layout_padding_default"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gtext"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="20dp"
+                android:paddingRight="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/radioF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Female"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/simpleSwitch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGrp"
+                android:layout_marginTop="50dp"
+                android:checked="false"
+                android:text="Is a Fresher"
+                android:textOff="Off"
+                android:textOn="On" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleSwitch2"
+                android:layout_marginTop="21dp"
+                android:text="SAVE"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleSwitch2"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="21dp"
+                android:text="DISCARD"
+                android:textStyle="normal|bold" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

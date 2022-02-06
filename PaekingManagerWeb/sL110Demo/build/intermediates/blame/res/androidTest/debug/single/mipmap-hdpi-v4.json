@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\parkingManagerWeb\\PaekingManagerWeb\\sL110Demo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4\\icon.png",
+        "source": "E:\\parkingManagerWeb\\PaekingManagerWeb\\sL110Demo\\build\\intermediates\\bundles\\debug\\res\\mipmap-hdpi-v4\\icon.png"
+    },
+    {
+        "merged": "E:\\parkingManagerWeb\\PaekingManagerWeb\\sL110Demo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4\\logo.png",
+        "source": "E:\\parkingManagerWeb\\PaekingManagerWeb\\sL110Demo\\build\\intermediates\\bundles\\debug\\res\\mipmap-hdpi-v4\\logo.png"
+    },
+    {
+        "merged": "E:\\parkingManagerWeb\\PaekingManagerWeb\\sL110Demo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\parkingManagerWeb\\PaekingManagerWeb\\sL110Demo\\build\\intermediates\\bundles\\debug\\res\\mipmap-hdpi-v4\\ic_launcher.png"
+    }
+]

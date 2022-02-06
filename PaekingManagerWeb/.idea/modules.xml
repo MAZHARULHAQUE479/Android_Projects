@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PaekingManagerWeb.iml" filepath="$PROJECT_DIR$/PaekingManagerWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PaekingManagerWeb.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PaekingManagerWeb.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/PaekingManagerWeb.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/PaekingManagerWeb.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sL110Demo/PaekingManagerWeb.sL110Demo.iml" filepath="$PROJECT_DIR$/.idea/modules/sL110Demo/PaekingManagerWeb.sL110Demo.iml" />
+    </modules>
+  </component>
+</project>

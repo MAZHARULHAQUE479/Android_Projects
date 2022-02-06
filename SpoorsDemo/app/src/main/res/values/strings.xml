@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SpoorsDemo</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="view_data">view data</string>
+    <string name="delete">delete</string>
+    <string name="add_user">add user</string>
+    <string name="update">update</string>
+    <string name="dtext">Select Department</string>
+    <string name="spinner_title">SELECT</string>
+    <string name="Gender">Gender</string>
+    <string name="SELECT">select</string>
+</resources>

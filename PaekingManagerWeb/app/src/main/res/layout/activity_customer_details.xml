@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/inputsearch"
+            android:layout_width="219dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.91"
+            android:background="@color/red"
+            android:hint="@string/EntertheCardno"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/Search"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/Search" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="From" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/inputTotal1"
+            android:layout_width="114dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/red"
+            android:hint="@string/EnterDate"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/inputTotal2"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:background="@color/red"
+            android:hint="@string/EnterTime"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="TO" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/inputTotal3"
+            android:layout_width="114dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/red"
+            android:hint="@string/EnterDate"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/inputTotal4"
+
+            android:layout_width="107dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/red"
+            android:hint="@string/EnterTime"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff" />
+
+        <Button
+
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/AllDelete" />
+        <Button
+           android:visibility="gone"
+            android:id="@+id/button7"
+            android:layout_marginLeft="-80dp"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:text="Delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutDisplayPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/CustomerDetails"
+                    android:textColor="@color/text_color"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvNoRecordsFound"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/NoRecordsFound"-->
+                <!--android:textColor="@color/text_color"-->
+                <!--android:textSize="15dp" />-->
+
+
+                <LinearLayout
+                    android:id="@+id/parentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <ListView
+                    android:id="@+id/customerlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

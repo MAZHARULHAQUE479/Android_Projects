@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:padding="4sp"
+        android:id="@+id/id"
+        android:text="Card Id:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/cardid"
+        android:padding="3sp"
+        android:layout_toRightOf="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/no"
+        android:padding="3sp"
+       android:layout_below="@+id/id"
+        android:text="Card No:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/cardno"
+        android:padding="3sp"
+        android:layout_alignBaseline="@+id/no"
+        android:layout_toRightOf="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/type"
+        android:padding="3sp"
+        android:text="Card Type:"
+        android:layout_below="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/cardtype"
+        android:padding="3sp"
+        android:layout_toRightOf="@+id/type"
+        android:layout_below="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/price"
+        android:padding="3sp"
+        android:layout_below="@+id/type"
+        android:text="Card Price:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/cardprice"
+        android:padding="3sp"
+        android:layout_alignBaseline="@+id/price"
+        android:layout_toRightOf="@+id/price"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/in"
+        android:text="In Image:"
+        android:layout_below="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/inimage"
+        android:layout_below="@+id/in"
+        android:layout_width="320sp"
+        android:layout_height="240sp" />
+    <TextView
+        android:id="@+id/out"
+        android:text="Out Image:"
+        android:padding="3sp"
+        android:layout_below="@+id/inimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/outimage"
+        android:layout_below="@+id/out"
+        android:padding="3sp"
+        android:layout_width="320sp"
+        android:layout_height="240sp" />
+    <TextView
+        android:id="@+id/itime"
+        android:text="In Time:"
+        android:padding="3sp"
+        android:layout_below="@+id/outimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/intime"
+        android:padding="3sp"
+        android:layout_alignBaseline="@+id/itime"
+        android:layout_toRightOf="@+id/itime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/otime"
+        android:text="Out Time:"
+        android:padding="3sp"
+        android:layout_below="@+id/itime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/outtime"
+        android:padding="3sp"
+        android:layout_alignBaseline="@+id/otime"
+        android:layout_toRightOf="@+id/otime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/st"
+        android:text="Status:"
+        android:padding="3sp"
+        android:layout_below="@+id/otime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/status"
+        android:padding="3sp"
+        android:layout_alignBaseline="@+id/st"
+        android:layout_toRightOf="@+id/st"
+        android:layout_below="@+id/otime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/uname"
+        android:text="User Name:"
+        android:padding="3sp"
+        android:layout_below="@+id/st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/username"
+        android:padding="3sp"
+        android:layout_alignBaseline="@+id/uname"
+        android:layout_toRightOf="@+id/uname"
+        android:layout_below="@+id/otime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

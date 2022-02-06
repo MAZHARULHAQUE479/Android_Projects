@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quản lý bãi xe</string>
+    <string name="cameraSetting">Cài đặt camera</string>
+    <string name="List">Danh sách</string>
+    <string name="id">MÃ THẺ</string>
+    <string name="price">Giá</string>
+    <string name="set">CÀI</string>
+    <string name="run">TẮT/MỞ</string>
+    <string name="search">TÌM</string>
+    <string name="total">TỔNG</string>
+    <string name="User">Người dùng</string>
+    <string name="Admin">Quản trị viên</string>
+    <string name="CreateNewCard">Thêm thẻ mới</string>
+    <string name="en">Tiếng Anh</string>
+    <string name="vi">Tiếng Việt</string>
+    <string name="txt_setting_changeyourlocale">Thay đổi ngôn ngữ</string>
+    <string name="msg_change_locale">Ngôn ngữ đã được thay đổi</string>
+    <string name="ManageCard">Quản lý thẻ</string>
+    <string name="ManageUser">Quản lý người dùng</string>
+    <string name="CustomerDetails">Chi tiết ra vào</string>
+    <string name="NoRecordsFound">Không thấy bất cứ dữ liệu nào</string>
+    <string name="ManageCardPrice">Quản lý giá thẻ</string>
+    <string name="EnterYourCardId">Nhập mã thẻ</string>
+    <string name="EnterYourCardNo">Nhập số thẻ</string>
+    <string name="EnterUserName">Nhập tên người dùng</string>
+    <string name="EnterPassword">Nhập mật khẩu</string>
+    <string name="CreateNewUser">Tạo người dùng mới</string>
+    <string name="CreateNewAdmin">Tạo quản lý mới</string>
+    <string name="EnterAdminName">Nhập tên quản lý</string>
+    <string name="Ok">OK</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="action_favorite">Yêu thích</string>
+    <string name="cancel">Hủy</string>
+    <string name="dialog_message">Muốn đăng xuất?</string>
+    <string name="user">Người dùng</string>
+    <string name="TotalPrice">Tổng tiền</string>
+    <string name="LogInTime">Thời gian đăng nhập</string>
+    <string name="LogOutTime">Thời gian đăng xuất</string>
+    <string name="TotalCarInput">Tổng xe vào</string>
+    <string name="nfc_disabled">NFC đã bị tắt</string>
+    <string name="disable">Tắt</string>
+    <string name="CardID">Mã thẻ</string>
+    <string name="CreateNew">Tạo mới</string>
+    <string name="Deatils">Chi tiết</string>
+    <string name="EnterCardNumber">Nhập số thẻ</string>
+    <string name="EnterCardPrice">Nhập giá thẻ</string>
+    <string name="EnterCardType">Nhập loại thẻ</string>
+    <string name="EnterDate">Nhập ngày tháng</string>
+    <string name="EntertheCardno">Nhập số thẻ</string>
+    <string name="INtime">Thời gian vào</string>
+    <string name="InImage">Hình ảnh vào</string>
+    <string name="OutImage">Hình ảnh ra</string>
+    <string name="OutTime">Thời gian ra</string>
+    <string name="Search">Tìm kiếm</string>
+    <string name="Status">Trạng thái</string>
+
+    <string name="capture">CHỤP</string>
+    <string name="EnterTime">Nhập thời gian</string>
+    <string name="From">TỪ</string>
+    <string name="TO">ĐẾN</string>
+    <string name="Settings">Cài đặt</string>
+    <string name="TransactionManager">Quản lý giao dịch</string>
+    <string name="Browse">Duyệt</string>
+    <string name="AllDelete">Xóa dữ liệu cũ</string>
+    <string name="Restoredatabse">Khôi phục Cơ sở dữ liệu</string>
+    <string name="BackUpdatabse">Sao lưu Cơ sở dữ liệu</string>
+    <string name="TimeIntervalInMinute">Tần suất (phút)</string>
+
+
+
+    <string name="Restore">Khôi phục</string>
+    <string name="BackUP">Sao lưu</string>
+    <string name="SelectBefore">Chọn trước ngày</string>
+    <string name="Time">Thời gian</string>
+    <string name="Date">Ngày</string>
+
+    <string name="SelectAccount">Chọn tài khoản</string>
+    <string name="OnlineBackupGoogleDrive">Sao lưu dữ liệu lên Google Drive</string>
+    <string name="OfflineBackupSDCard">Sao lưu dữ liệu vào SD card</string>
+    <string name="CardNO">Số thẻ</string>
+    <string name="delete">Xóa</string>
+
+    <string name="ChangeLanguage">Thay đổi ngôn ngữ</string>
+    <string name="Cantcreatedirectorytosaveimage">Không thể tạo thư mục để lưu hình ảnh.</string>
+    <string name="Please_enter_cardprice_in_admin_panel">Vui lòng nhập giá thẻ trong bảng quản trị</string>
+    <string name="Please_enter_valid_card_no">Vui lòng nhập số thẻ hợp lệ</string>
+    <string name="Please_Create_Card_Type_in_Admin_Panel">Vui lòng tạo loại thẻ trong bảng quản trị</string>
+    <string name="Image_could_not_be_saved">Không thể lưu ảnh</string>
+    <string name="Please_Come_in">Xin mời vào</string>
+    <string name="Please_go_out">Xin mời ra</string>
+    <string name="Device_Connected_Starting_Auto_mode">Thiết bị kết nối Bắt đầu chế độ tự động</string>
+    <string name="Device_is_not_connected_Please_use_manual_mode">Thiết bị không được kết nối Vui lòng sử dụng chế độ thủ công</string>
+    <string name="Please_LogOut_First">Xin vui lòng đăng xuất trước</string>
+    <string name="Add_All_Fields">Thêm Tất cả các trường</string>
+    <string name="DeviceConnectedReadingCardId">Thiết bị kết nối đang đọc ID thẻ</string>
+    <string name="Connected">Đã được kết nối</string>
+    <string name="ok">OK</string>
+    <string name="OK">OK</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+</resources>

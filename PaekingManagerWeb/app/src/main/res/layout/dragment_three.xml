@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <EditText
+        android:inputType="number"
+        android:layout_marginRight="5dp"
+        android:textAlignment="center"
+        android:hint="@string/EntertheCardno"
+        android:textColorHint="#ffffff"
+        android:background="@color/red"
+        android:layout_width="219dp"
+        android:layout_height="40dp"
+        android:id="@+id/inputsearch"
+        android:layout_weight="0.91" />
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Search"
+        android:id="@+id/Search" />
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/From"
+      android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_marginRight="5dp"
+
+            android:textAlignment="center"
+            android:hint="@string/EnterDate"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:background="@color/red"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/inputTotal1"
+          />
+
+        <EditText
+            android:textAlignment="center"
+            android:hint="@string/EnterTime"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:background="@color/red"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/inputTotal2"
+         />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/TO"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_marginRight="5dp"
+
+            android:textAlignment="center"
+            android:hint="@string/EnterDate"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:background="@color/red"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/inputTotal3"
+          />
+
+        <EditText
+            android:textAlignment="center"
+            android:hint="@string/EnterTime"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:background="@color/red"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/inputTotal4"
+         />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutDisplayPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/CustomerDetails"
+                    android:textColor="@color/text_color"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+
+
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvNoRecordsFound"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/NoRecordsFound"-->
+                    <!--android:textColor="@color/text_color"-->
+                    <!--android:textSize="15dp" />-->
+
+
+                <LinearLayout
+                    android:id="@+id/parentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ListView
+                android:divider="@drawable/divider"
+                android:id="@+id/customer_detail"
+                android:layout_width="match_parent"
+                android:layout_height="261dp">
+
+            </ListView>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

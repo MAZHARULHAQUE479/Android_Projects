@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="company.cell.com.Cellotto.MatchSelfActivity">
+
+<LinearLayout
+    android:id="@+id/layout5"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_matches"
+        android:text="PLAYS AND MATCHES"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txt_plays"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="-180dp"
+        android:textColor="#ffffff"
+        android:text="Total No. of plays"
+        android:layout_width="wrap_content"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_height="wrap_content" />
+    <!--<TextView-->
+        <!--android:id="@+id/plays_no"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_marginLeft="180dp"-->
+        <!--android:text="29"-->
+        <!--android:textColor="#ffff"-->
+        <!--android:textAppearance="@style/TextAppearance.FontPath"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <TextView
+        android:id="@+id/txt_spend"
+        android:layout_marginTop="80dp"
+       android:layout_marginLeft="-312dp"
+        android:text="Total Spend"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+     />
+    <!--<TextView-->
+        <!--android:id="@+id/spend_no"-->
+        <!--android:layout_marginTop="80dp"-->
+        <!--android:layout_marginLeft="210dp"-->
+        <!--android:text="2900"-->
+        <!--android:textColor="#ffff"-->
+        <!--android:textAppearance="@style/TextAppearance.FontPath"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <Button
+        android:id="@+id/btn_daily"
+        android:text="DAILY-DRAW PLAYS"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="-320dp"
+        android:background="@drawable/square_button"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp" />
+    <ImageButton
+        android:id="@+id/drop"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_self"
+        android:text="SELF-DRAW PLAYS"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/square_button"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp" />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:divider="#ffffff"
+        android:layout_below="@+id/layout5"
+        android:showDividers="beginning"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+    <ScrollView
+        android:layout_below="@+id/layout5"
+        android:id="@+id/scroll_board"
+        android:overScrollMode="always"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+
+       android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:layout_width="match_parent"
+
+        android:layout_height="170dp">
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"></ListView>
+
+
+
+    </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/layout7"
+        android:layout_below="@+id/layout6"
+        android:divider="#ffffff"
+        android:showDividers="beginning"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:id="@+id/winning_categories"
+            android:layout_width="wrap_content"
+            android:text="Total Winning Categories"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/winning_categories_digit"
+            android:text="100"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total_match"
+            android:layout_width="wrap_content"
+            android:text="Total No. of Matches"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-330dp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total_match_digit"
+            android:layout_width="wrap_content"
+            android:text="300"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="175dp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total_win"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="-330dp"
+            android:textColor="#ffffff"
+            android:text="Total Winning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/winning_digit"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="#ffffff"
+            android:text="$10000"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:id="@+id/jackpot"
+        android:layout_marginLeft="-354dp"
+        android:layout_marginTop="70dp"
+        android:text="JACKPOT $ 100000000"
+        android:background="#ffd700"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/application"
+            android:layout_width="70sp"
+            android:layout_height="30sp"
+
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/playbutton"
+            android:text="EXIT"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="#ffffff"
+
+            android:textSize="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="#ffebcd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</RelativeLayout>

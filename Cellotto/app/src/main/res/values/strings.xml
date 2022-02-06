@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Cellotto</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string-array name="play">
+        <item>you play 1</item>
+        <item>you play 2</item>
+        <item>you play 3</item>
+        <item>you play 4</item>
+        <item>you play 5</item>
+        <item>you play 6</item>
+        <item>you play 7</item>
+        <item>you play 8</item>
+        <item>you play 9</item>
+        <item>you play 10</item>
+
+
+    </string-array>
+    <string-array name="win">
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+        <item>winning Nos</item>
+
+
+    </string-array>
+
+    <string-array name="play_digit">
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+
+
+    </string-array>
+
+    <string-array name="win_digit">
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+        <item>123456</item>
+
+
+    </string-array>
+    <string name="actionbaricon"></string>
+
+
+    <string name="question_prompt">Choose your question</string>
+
+    <string-array name="question_arrays">
+        <item>what is your pet name</item>
+        <item>what is your mother maiden name</item>
+        <item>what is the name of your first school</item>
+
+    </string-array>
+
+</resources>

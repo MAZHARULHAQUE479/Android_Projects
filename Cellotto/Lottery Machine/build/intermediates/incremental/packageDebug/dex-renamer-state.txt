@@ -1,0 +1,7 @@
+#Mon Nov 13 13:21:06 IST 2017
+base.0=D\:\\mazharul_androidProject\\Cellotto\\Lottery Machine\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d712aa82259859d327fee6a6ce165bbc41b305cd
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\mazharul_androidProject\\Cellotto\\Lottery Machine\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6deb6a0558b9b760577fb7be1ffa475f612812c1\\classes.dex
+base.1=D\:\\mazharul_androidProject\\Cellotto\\Lottery Machine\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6deb6a0558b9b760577fb7be1ffa475f612812c1
+file.0=D\:\\mazharul_androidProject\\Cellotto\\Lottery Machine\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d712aa82259859d327fee6a6ce165bbc41b305cd\\classes.dex

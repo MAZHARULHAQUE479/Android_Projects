@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="company.cell.com.Cellotto.MainActivity"
+    android:background="@drawable/bg_all">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:background="?attr/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:padding="32dp"
+        android:layout_marginTop="56sp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:background="@drawable/playbutton"
+            android:text="Apply"
+            android:id="@+id/application"
+            android:textAllCaps="false"
+            android:layout_marginTop="50sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/playbutton"
+
+            android:text="Share-Play"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:id="@+id/share_play"
+            android:textSize="16sp"
+            android:layout_marginTop="50sp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/playbutton"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:text="Play"
+            android:textSize="16sp"
+            android:id="@+id/play"
+            android:textAllCaps="false"
+            android:layout_marginTop="50sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:background="@drawable/playbutton"
+            android:text="Exit"
+            android:textSize="16sp"
+            android:id="@+id/mexit"
+            android:textAllCaps="false"
+            android:layout_marginTop="50sp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/toolbaricon"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/cellotto_small" />
+</RelativeLayout>

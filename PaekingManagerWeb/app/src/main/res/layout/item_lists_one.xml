@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+       android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.rey.material.widget.LinearLayout
+            android:padding="5dp"
+            android:id="@+id/inflateParentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="@string/CardID"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="id"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="@string/CardNO"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tvFullNo"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="id"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+
+            android:id="@+id/inflateParentView11"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="@string/price"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tvFullName1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="price"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+
+            android:id="@+id/inflateParentView125"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="@string/InImage"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+
+            android:id="@+id/inflateParentView10"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="320dp"
+                android:layout_height="240dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY" />
+
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+            android:id="@+id/inflateParentView13"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/OutImage"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+
+            android:id="@+id/inflateParentView153"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="320dp"
+                android:layout_height="240dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY" />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+
+            android:id="@+id/inflateParentView14"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="@string/Status"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tvFullName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="status"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+          android:weightSum="1"
+            android:id="@+id/inflateParentView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.TextView
+             android:layout_weight="0.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="@string/INtime"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tvFullINTime"
+               android:layout_weight="0.75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="In Time"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+            android:weightSum="1"
+            android:id="@+id/inflateParentView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.TextView
+                android:layout_weight="0.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="@string/OutTime"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:layout_weight="0.75"
+                android:id="@+id/tvFullOutTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="left"
+                android:text="Out Time"
+                android:textColor="#448897"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary">
+
+    </LinearLayout>
+</LinearLayout>

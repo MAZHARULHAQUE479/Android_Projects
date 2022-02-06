@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/inflateParentView"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+
+                android:id="@+id/cardprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:text="cardPrice"
+                android:textColor="#448897"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="4sp"
+
+                android:text="Id"
+                android:textColor="#448897"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cardtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/cardprice"
+                android:layout_alignBottom="@+id/cardprice"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/id"
+                android:layout_toRightOf="@+id/id"
+                android:text="cardType"
+                android:textColor="#448897"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="25sp"
+            android:layout_height="28sp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="29dp"
+            android:layout_toLeftOf="@+id/delete"
+            android:layout_toStartOf="@+id/delete"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginRight="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/trash" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary">
+
+    </LinearLayout>
+   </LinearLayout>

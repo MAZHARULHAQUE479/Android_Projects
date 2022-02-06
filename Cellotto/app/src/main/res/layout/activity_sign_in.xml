@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:clipToPadding="false"
+    tools:context="company.cell.com.Cellotto.SharePlay"
+    android:background="@drawable/background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginRight="-10sp"
+        android:layout_marginLeft="-10sp"
+        android:layout_height="56sp"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="66sp"
+
+        android:id="@+id/layout1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Details"
+            android:gravity="center"
+            android:textColor="#b2d5f2"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#cdb5cd"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="160sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <company.cell.com.Cellotto.Custom.MyEditTextLight
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secret_code"
+        android:layout_centerVertical="true"
+        android:hint="Enter     Secret   Code"
+        android:gravity="center"
+        android:layout_marginTop="40sp"
+        android:textSize="16sp"
+        android:padding="10sp"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:maxLength="10"/>
+    <Spinner
+        android:id="@+id/secret_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type Question"
+        android:prompt="@string/question_prompt"
+        android:overlapAnchor="false"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:layout_below="@+id/secret_code"
+        android:spinnerMode="dropdown"
+
+        />
+    <company.cell.com.Cellotto.Custom.MyEditTextLight
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secret_answer"
+        android:layout_centerVertical="true"
+        android:hint="Enter  Security  Answer"
+        android:padding="10sp"
+        android:gravity="center"
+       android:layout_below="@+id/spinnerquestion"
+        android:textSize="16sp"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:maxLength="10"/>
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:id="@+id/sign_in"
+        android:layout_below="@+id/answer_code"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.FontPath"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+
+        android:background="@drawable/playbutton"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/toolbaricon"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/cellotto_small" />
+</RelativeLayout>

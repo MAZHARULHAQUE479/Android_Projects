@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10sp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/auser"
+        android:padding="4sp"
+        android:layout_width="wrap_content"
+        android:text="User Name:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/ausername"
+        android:padding="4sp"
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@+id/auser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/aprice"
+        android:padding="4sp"
+        android:layout_below="@+id/auser"
+        android:text="Total Price:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/atprice"
+        android:padding="4sp"
+        android:layout_marginLeft="11sp"
+        android:layout_below="@+id/auser"
+        android:layout_toRightOf="@+id/aprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/alogin"
+        android:padding="4sp"
+        android:text="Login Time:"
+        android:layout_below="@+id/aprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/alogintime"
+        android:padding="4sp"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@+id/aprice"
+        android:layout_toRightOf="@+id/alogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/alogout"
+        android:layout_below="@+id/alogin"
+        android:text="Logout Time:"
+        android:padding="4sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/alogouttime"
+        android:padding="4sp"
+        android:layout_below="@+id/alogintime"
+        android:layout_toRightOf="@+id/alogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/atcar"
+        android:padding="4sp"
+        android:layout_below="@+id/alogout"
+        android:text="Total car:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/atotalcar"
+        android:padding="4sp"
+        android:layout_below="@id/alogout"
+        android:layout_toRightOf="@+id/atcar"
+        android:layout_marginLeft="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

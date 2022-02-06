@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#8585d9</color>-->
+    <color name="colorPrimary">#ffffff</color>
+
+    <color name="colorPrimaryDark">#000106</color>
+    <color name="colorAccent">#5D8AA8</color>
+    <color name="textColorLightPrimary">#FFFFFF</color>
+    <color name="textColorLightSecondry">#FFFFFF</color>
+    <color name="colorLightAccent">#5D8AA8</color>
+    <color name="toolbarTransparent">#00000000</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="black">#787878</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="radio_color">#e75748</color>
+    <color name="white">#ffffff</color>
+</resources>
